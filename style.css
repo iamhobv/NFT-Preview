@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container{
+    width: 20rem;
+    height: 32rem;
+   
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.content {
+    padding: 16px 16px 40px 16px;
+}
+
+.image {
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    display: flex;
+   
+}
+
+img{
+    width: 288px;
+    height: 288px;
+    
+}
+
+.filter{
+    display: none;
+    position: absolute;
+    margin-left: -33%;
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+   background-color:rgba(0, 255, 255, 0.438);
+}
+.image:hover{
+    cursor: pointer;
+}
+
+.image:hover .filter{
+    display: block;
+}
+
+.view{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+
+}
+
+
+h1{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: 500;
+  line-height: 1.2;
+}
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+p{
+    
+    font-size: 0.9rem;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 12px;
+}
+.before::before{
+    content: '';
+    background-image: url(images/icon-ethereum.svg);
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+   
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(178, 100%, 50%);
+}
+h4{
+    color: hsl(178, 100%, 50%);
+    font-size: 0.9rem;
+
+   
+}
+
+.clock{
+    width: 16px;
+    height: 16px;
+}
+.days{
+    display: flex;
+    gap: 5px;
+}
+span{
+    color: white;
+}
+span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+    gap: 15px;
+}
+
+.avatar-img{
+    width: 32px;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.attribution{
+    color: white;
+}
